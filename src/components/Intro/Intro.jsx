@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import boy from "../../img/profile1111.jpg";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -28,10 +28,9 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Mark Samson D'Souza</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+          A certified trainer and certified nutritionist with a deep passion for health and fitness. My journey in the fitness world has earned me the prestigious titles of Mr. Telangana and Mr. Hyderabad, along with the honor of competing at esteemed bodybuilding events. With my expertise in nutrition and training, I strive to inspire others to achieve their fitness goals and lead healthier, more fulfilling lives.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -39,16 +38,19 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
+          <a href="https://www.instagram.com/samsgym.fitnesscenter?igsh=MTZoMWNocmo5ZzVycw==" target="_blank">
           <img src={Instagram} alt="" />
+          </a>
+          
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        {/* <img src={Vector1} alt="" /> */}
+        {/* <img src={Vector2} alt="" /> */}
+        {/* <img src={boy} alt="" style={{transform:"0.25"}}/> */}
+        <img src={boy} alt="Profile" className="profile-img" />
+
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -64,7 +66,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Certified" text2="Trainer" />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +77,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="certified" text2="Nutritionist" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

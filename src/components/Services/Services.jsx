@@ -7,7 +7,7 @@ import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
-
+import GymCard from "./gymCard.pdf";
 const Services = () => {
   // context
   const theme = useContext(themeContext);
@@ -27,12 +27,14 @@ const Services = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
+        I specialize in providing comprehensive fitness and wellness solutions<br/>
+          tailored to your unique goals and lifestyle My services also include
+          CrossFit,<br/> bodybuilding, strength training, and personalized workout
+          plans, designed to maximize results.
+          
         </spane>
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
+        <a href={GymCard} download>
+          <button className="button s-button">Download Card</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
@@ -45,9 +47,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            emoji={Humble}
+            heading={"Strength Training"}
+            detail={"Building muscle through resistance exercises."}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +60,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Nutrition"}
+            detail={"Balanced meal plans and nutritious foods."}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +72,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Personal Coaching"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "One-on-one sessions to help you reach your fitness goals."
             }
             color="rgba(252, 166, 31, 0.45)"
           />

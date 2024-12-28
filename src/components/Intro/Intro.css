@@ -57,11 +57,43 @@
   position: absolute;
   z-index: 1;
 }
-.i-right > :nth-child(1) {
+/* .i-right > :nth-child(1) {
   transform: scale(0.69);
-  left: -15%;
-  top: -9%;
+  left: 2%;
+  top: -40%;
+  height: 132vh;
+} */
+
+/* Style for the profile image (boy) */
+.i-right .profile-img {
+  position: relative; /* Keep position relative to .i-right */
+  max-width: 100%; /* Ensure it doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Cover the container properly */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+  margin-top: 2rem; /* Adjust spacing */
 }
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .i-right .profile-img {
+    width: 70%; /* Adjust width on tablets and small screens */
+    margin: 1rem auto; /* Center align and adjust spacing */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .i-right .profile-img {
+    width: 80%; /* Adjust width for very small screens */
+    margin: 1rem auto; /* Center the image */
+    transform: scale(1); /* Reset scaling */
+  }
+}
+
+
+
+
 .i-right > :nth-child(2) {
   top: -4.6rem;
   transform: scale(0.67);
